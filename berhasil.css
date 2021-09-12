@@ -1,0 +1,449 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-color: #e6ffff;
+}
+.pagar{
+	width: 80%;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+/*-----------------header-----------------------*/
+.header{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	z-index: 1000;
+	top: 0;
+	box-shadow: 1px 1px 7px -2px rgba(149, 171, 170, 1.0);
+
+}
+/*---------------bagian isi---------------------*/
+.isi{
+	position: relative;
+	display: inline-block;
+	margin-left: 5.5%;
+	margin-top: 110px;
+	margin-bottom: 100px;
+	margin: 110px 5.5% 100px;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 50%;
+	background: #fff;
+	border-radius: 3px;
+
+	transition: 0.3s;
+}
+.isi h1{
+	font: normal normal bold 30px/36px calibri, sans-serif;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.isi p{
+	font: normal normal normal 17px/21px calibri, sans-serif;
+	color: rgba(59, 59, 59, 1.0);
+	text-align: justify;
+}
+.lisjudul{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.lisjudul a{
+	width: 70px;
+	height: 50px;
+	border-radius: 2px;
+	padding: 10px;
+	position: relative;
+	margin: 10px;
+	transition: 0.1s;
+
+}
+.lisjudul div img{
+	width: 100%;
+	background-color: rgba(0, 0, 0, .0);
+}
+.bunderan{
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, .0);
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	bottom: 2px;
+	left: 35px;
+}
+.bunderan p{
+	font-family: arial;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	transition: 0.2s;
+}
+.lisjudul a:hover{
+	background-color: #f7f7f7
+}
+.lisjudul a:hover .bunderan p{
+	color: #b0b0b0;
+}
+.isi img{
+	width: 100%;
+	margin-bottom: 10px;
+	}
+/*.isi li img{
+
+	width: 70px;
+	position: relative;
+	z-index: 1;
+	transition: 0.2s;
+	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+
+
+}
+.isi li{
+	background-color: white;
+	width: 70px;
+	height: 50px;
+	position: relative;
+	float: left;
+	margin: 20px 20px;
+}
+
+}
+.clear{
+	clear: both;
+}
+-----------tanda nomer---------
+.bendera{
+	top: 30px;
+	position: absolute;
+	z-index: -1;
+	transition: 0.2s;
+	left: 40%;
+	opacity: 0;
+}
+.flag{
+	top: 0px;
+	width: 15px;
+	height: 25px;
+	background-color: red;
+}
+.segi3{
+	top: 0;
+	width: 0;
+	height: 0;
+	background-color: red;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+	border-bottom: 15px solid white;
+}
+.flag h1{
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	height: 25px;
+	line-height: 35px;
+}
+*/
+/*-------------bagian samping---------------------*/
+.samping{
+	position: fixed;
+	z-index: 998;
+	height: 400px;
+	width: 30%;
+	background: rgba(210, 255, 255, 1);
+
+	border-radius: 3px;
+	top: 110px;
+	left: 55%;
+	box-sizing: border-box;
+	transition: 0.3s;
+
+
+
+}
+.isisamping{
+	width: 50%;
+	height: 300px;
+	background-color: rgba(210, 255, 255, 1);
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+
+}
+.musuh{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	transition: 0.2s;
+	
+	
+}
+.musuh img{
+	width: 100%;
+	padding: 20%;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	
+	box-sizing: border-box;
+
+}
+.gambarkomik{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	transition: 0.2s;
+}
+.gambarkomik img{
+	z-index: 0;
+	position: absolute;
+	transition: 0.2s;
+	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	width: 100%;
+
+}
+.tulisan{
+	z-index: -1;
+	opacity: 1;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: white;
+	transition: 0.3s;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+}
+.penutup{
+	background-color: rgba(0, 0, 0, .0);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.bukapintu:target .isisamping{
+	z-index: 9999;
+}
+.isisamping a:hover .gambarkomik{
+	left: -20px;
+}
+.isisamping a:hover .musuh{
+	left: 20px;
+}
+.bukapintu:target .musuh{
+	left: 90%;
+	transform: scale(0.8);
+	
+}
+
+.bukapintu:target .gambarkomik{
+	left: -90%;
+	transform: scale(0.8);	
+}
+.bukapintu:target .penutup{
+	width: 570px;
+	left: -100%;
+	z-index: 1;
+}
+.bukapintu:target .tulisan{
+		opacity: 1;
+		height: 100%;
+}
+.tutuppintu:target .target{
+	 opacity: 0;
+
+}
+.tutuppintu:target .isisamping{
+	z-index: 9999;
+}
+.tutuppintu:target .musuh{
+	left: 0;
+
+}
+.tutuppintu:target .gambarkomik{
+	left: 0;
+
+}
+.tutuppintu:target .penutup{
+	z-index: -1;
+	width: 100%;
+}
+
+
+/*----------samping yang sembunyi--------------------*/
+.sampinghilang{
+	position: fixed;
+	right: -20%;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: 3px 3px 12px -4px rgba(0, 255, 244, 0.25);
+	transition: 0.4s;
+	z-index: 999999;
+}
+.bukak{
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	height: 40px;
+	width: 20px;
+	transform: translate(-50%, -50%);
+    border-radius: 30px 0 0 30px;
+	background-color: lightblue;
+}
+.tutup{
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	height: 40px;
+	width: 20px;
+	transform: translate(-50%, -50%);
+    border-radius: 30px 0 0 30px;
+	background-color: lightblue;
+}
+
+/*klik klik klik klik*/
+
+.sampinghilang:target{
+	right: 0;
+}
+.sampinghilang:target .bukak{
+	opacity: 0;
+	left: 1000px;
+}
+.tutup: targert .sampinghilang{
+	right: -20%;
+}
+.isi:hover{
+	z-index: 999;
+	box-shadow: 0 0 0px 1px rgba(87, 215, 235, .5);
+
+}
+.samping:hover{
+	box-shadow: 0 0 0px 1px rgba(87, 215, 235, .5);
+}
+.isi ul a:hover .bendera{
+	z-index: 0;
+	top: 40px;
+	opacity: 1;
+}
+.isi li:hover{
+	transform: scale(1.1);
+}
+.isisamping:target{
+	z-index: 999;
+
+}
+/*--------------------arah kiri kanan----------------*/
+.arahkiri, .arahkanan{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+}
+.arahkiri{
+	top: 50%;
+	left: -40%;
+}
+.arahkanan{
+	right: -40%;
+	top: 50%;
+}
+/*----------------------highlight----------------------*/
+.komik:target{
+	transform: scale(1.1);
+}
+
+
+/*--------zzzzz---------
+.zzz{
+	width: 50%;
+	height: 75%;
+	background-color: greenyellow;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+}
+
+.zzz:target{
+	
+	animation: animasi 1s ease forwards;
+	
+}
+@keyframes animasi{
+	0% {
+		transform: rotateY(180deg);
+		top: 12.5%;
+		left: 25%;
+	}
+	100%{
+		z-index: -999;
+	}
+}*/
