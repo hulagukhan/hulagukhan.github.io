@@ -1,0 +1,367 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-color: #e6ffff;
+}
+.pagar{
+	width: 85%;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding: 110px 0 110px;
+	display: block;
+}
+/*-----------------header-----------------------*/
+.header{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	z-index: 1000;
+	top: 0;
+	box-shadow: 1px 1px 7px -2px rgba(149, 171, 170, 1.0);
+
+}
+/*---------------bagian isi---------------------*/
+.isi{
+	display: block;
+	position: relative;
+	margin: 0 auto ;
+	box-sizing: border-box;
+	width: 80%;
+	background: #fff;
+	border-radius: 3px;
+	flex-grow: 1;
+	transition: 0.3s;
+}
+.isi h1{
+	font: normal normal bold 45px/50px calibri, sans-serif;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.isi p{
+	font: normal normal normal 30px/33px calibri, sans-serif;
+	color: rgba(59, 59, 59, 1.0);
+	text-align: justify;
+}
+.lisjudul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.lisjudul a{
+	width: 210px;
+	height: 150px;
+	border-radius: 2px;
+	padding: 10px;
+	position: relative;
+	margin: 40px 25px;
+	transition: 0.1s;
+		background-color: #f7f7f7
+
+}
+.lisjudul div img{
+	width: 100%;
+	background-color: rgba(0, 0, 0, .0);
+}
+.bunderan{
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, .0);
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	bottom: 2px;
+	left: 105px;
+}
+.bunderan p{
+	font-family: arial;
+	color: #b0b0b0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	transition: 0.2s;
+}
+.isi img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.clear{
+	clear: both;
+}
+/*-----------tanda nomer---------*/
+.flag h1{
+	position: absolute;
+	top: 100%;
+	font-size: 15px;
+	left: 50%;
+}
+/*-------------bagian samping---------------------*/
+.samping{
+	position: fixed;
+	z-index: 1;
+
+}
+.isisamping{
+	background-color: rgba(0, 0, 0, 0.1);
+
+ 	display: flex;
+ 	position: absolute;
+ 	top: -474px;
+
+
+
+
+
+}
+.isisamping a{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+.musuh{
+	background-color: rgba(0, 0, 0, .0);
+	position: absolute;
+	z-index: 0;
+	width: 300px;
+	height: 474px;
+	display: flex;
+	
+}
+.musuh img{
+	width: 60%;
+	padding: 20%;
+	background-color: rgba(255, 255, 255, 1.0);
+	transition: 0.5s;
+	justify-content: center;
+  	align-items: center;
+
+}
+.gambarkomik{
+	position: absolute;
+	z-index: 0;
+	width: 300px;
+	height: 474px;
+
+	display: flex;
+
+
+}
+.gambarkomik img{
+	justify-content: center;
+  	align-items: center;
+	width: 100%;
+	transition: 0.5s;
+
+
+}
+.tulisan{
+	position: absolute;
+	z-index: 0;	
+	width: 300px;
+	height: 474px;
+	background-color: white;
+	border: 2px solid black;
+	box-sizing: border-box;
+	padding: 15px;
+	box-sizing: border-box;
+	transition: 0.2s;
+		justify-content: center;
+  	align-items: center;
+}
+.tulisan p{
+	font: normal normal normal 16px/20px arial;
+	text-align: justify;
+	color: black;
+}
+.tulisan span{
+	font-weight: bold;
+	color: deepskyblue;
+}
+.arahkiri, .arahkanan{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	z-index: -9;
+}
+.arahkiri{
+	left: 0;
+}
+.arahkanan{
+	right: 0;
+}
+
+/*------buka pintu--------*/
+.bukapintu:target .gambarkomik{
+	background-color: rgba(0, 0, 0, .0);
+	z-index: -1;
+}
+.bukapintu:target .musuh{
+	z-index: -1;
+}
+.bukapintu:target .gambarkomik img{
+	margin-left: -84%;
+	transform: scale(.7);
+}
+.bukapintu:target .musuh img{
+	margin-left: 84%;
+	transform: scale(.7);
+}
+.bukapintu:target .isisamping{
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	 justify-content: center;
+  	align-items: center;
+}
+
+
+/*-------tutup pintu--------*/
+.tutuppintu:target .gambarkomik img{
+	margin-left: 0;
+}
+.tutuppintu:target .isisamping{
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	 justify-content: center;
+  	align-items: center;
+}
+/*-----close------*/
+.close{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .0);
+	position: absolute;
+	left: 0;
+	z-index: -9999;
+}
+.pembelakang:target .isisamping{
+	position: absolute;
+}
+
+/*----------samping yang sembunyi--------------------*/
+.sampinghilang{
+	position: fixed;
+	right: -220px;
+	top: 0;
+	bottom: 0;
+	width: 220px;
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: 3px 3px 12px -4px rgba(0, 255, 244, 0.25);
+	transition: 0.4s;
+	z-index: 999999;
+}
+.bukak{
+	position: absolute;
+	left: -10px;
+	top: 25%;
+	height: 40px;
+	width: 20px;
+	transform: translate(-50%, -50%);
+    border-radius: 30px 0 0 30px;
+	background-color: lightblue;
+}
+.tutup{
+	position: absolute;
+	left: -10px;
+	top: 25%;
+	height: 40px;
+	width: 20px;
+	transform: translate(-50%, -50%);
+    border-radius: 30px 0 0 30px;
+	background-color: lightblue;
+}
+
+/*klik klik klik klik*/
+
+.sampinghilang:target{
+	right: 0;
+}
+.sampinghilang:target .bukak{
+	opacity: 0;
+	left: 1000px;
+}
+.tutup: targert .sampinghilang{
+	right: -20%;
+}
+
+.isi ul a:hover .bendera{
+	z-index: 0;
+	top: 40px;
+	opacity: 1;
+}
+.isi li:hover{
+	transform: scale(1.1);
+}
+.isisamping:target {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+ 	justify-content: center;
+  	align-items: center;
+}
+.pembelakang:target .isisamping{
+	background-color: rgba(0, 0, 0, 0.1);
+
+ 	display: flex;
+ 	position: absolute;
+ 	top: -237px;
+}
+
+.komik:target{
+	transform: scale(1.1);
+}
