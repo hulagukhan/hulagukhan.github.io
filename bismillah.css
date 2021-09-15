@@ -178,6 +178,7 @@ body{
 	transition: 0.5s;
 	justify-content: center;
   	align-items: center;
+  	
 
 }
 .gambarkomik{
@@ -195,6 +196,7 @@ body{
   	align-items: center;
 	width: 100%;
 	transition: 0.5s;
+	margin-left: 0;
 
 
 }
@@ -221,20 +223,46 @@ body{
 	color: deepskyblue;
 }
 .arahkiri, .arahkanan{
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	position: absolute;
 	z-index: -9;
 }
 .arahkiri{
-	left: 0;
+	left: 20px;
 }
 .arahkanan{
-	right: 0;
+	right: 20px;
 }
-
+/*animasi*/
+.isisamping:target .gambarkomik img{
+	animation: comics ease-out 0.3s alternate forwards;
+}
+.isisamping:target .musuh img{
+	animation: villain ease-out 0.3s alternate forwards;
+}
+@keyframes comics{
+	0% {
+		margin-left: 0;
+		transform: scale(1.0);
+	}
+	100%{
+		margin-left: -85%;
+	transform: scale(.7);
+	}
+}
+@keyframes villain{
+	0%{
+		transform: scale(1.0);
+		margin-left: 0;
+	}
+	100%{
+		margin-left: 85%;
+		transform: scale(.7);
+	}
+}
 /*------buka pintu--------*/
-.bukapintu:target .gambarkomik{
+/*.bukapintu:target .gambarkomik{
 	background-color: rgba(0, 0, 0, .0);
 	z-index: -1;
 }
@@ -258,11 +286,11 @@ body{
 	left: 0;
 	 justify-content: center;
   	align-items: center;
-}
+}*/
 
 
 /*-------tutup pintu--------*/
-.tutuppintu:target .gambarkomik img{
+/*.tutuppintu:target .gambarkomik img{
 	margin-left: 0;
 }
 .tutuppintu:target .isisamping{
@@ -274,7 +302,7 @@ body{
 	left: 0;
 	 justify-content: center;
   	align-items: center;
-}
+}*/
 /*opsi dua*/
 /*.gambarkomik{
 	z-index: -1;

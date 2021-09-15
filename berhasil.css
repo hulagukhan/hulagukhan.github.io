@@ -445,7 +445,7 @@ body{
 	
 	animation: animasi 1s ease forwards;
 	
-}
+}*/
 @keyframes animasi{
 	0% {
 		transform: rotateY(180deg);
@@ -455,4 +455,4 @@ body{
 	100%{
 		z-index: -999;
 	}
-}*/
+}
