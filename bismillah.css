@@ -48,7 +48,7 @@ body{
 	width: 100%;
 	background-color:#ffefcc;
 	margin: 0 auto;
-	padding: 110px 0 110px;
+	padding: 20% 0 110px;
 	display: block;
 }
 /*-----------------header-----------------------*/
@@ -81,7 +81,7 @@ body{
 	margin-bottom: 10px;
 }
 .isi p{
-	font: normal normal normal 20px/30px arial;
+	font: normal normal normal 20px/35px arial;
 	color: rgba(59, 59, 59, 1.0);
 	text-align: justify;
 }
@@ -169,13 +169,14 @@ body{
 	width: 300px;
 	height: 474px;
 	display: flex;
-	
+
 }
 .musuh img{
 	width: 60%;
 	padding: 20%;
 	background-color: rgba(255, 255, 255, 1.0);
-	transition: 0.5s;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
 	justify-content: center;
   	align-items: center;
   	
@@ -195,7 +196,8 @@ body{
 	justify-content: center;
   	align-items: center;
 	width: 100%;
-	transition: 0.5s;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
 	margin-left: 0;
 
 
@@ -241,6 +243,13 @@ body{
 .isisamping:target .musuh img{
 	animation: villain ease-out 0.3s alternate forwards;
 }
+.isisamping:target .gambarkomik{
+	animation: kofer ease-out 0s alternate forwards;
+}
+.isisamping:target .musuh{
+	animation: kofer ease-out 0s alternate forwards;
+}
+
 @keyframes comics{
 	0% {
 		margin-left: 0;
@@ -261,12 +270,21 @@ body{
 		transform: scale(.7);
 	}
 }
+@keyframes kofer{
+	0%{
+		z-index: 0;
+	}
+	100%{
+		z-index: -1;
+	}
+}
 /*------buka pintu--------*/
-/*.bukapintu:target .gambarkomik{
-	background-color: rgba(0, 0, 0, .0);
+.bukapintu:target .gambarkomik{
+	transition-delay: 0.3s;
 	z-index: -1;
 }
 .bukapintu:target .musuh{
+	transition-delay: 0.3s;
 	z-index: -1;
 }
 .bukapintu:target .gambarkomik img{
@@ -286,13 +304,11 @@ body{
 	left: 0;
 	 justify-content: center;
   	align-items: center;
-}*/
+}
 
 
 /*-------tutup pintu--------*/
-/*.tutuppintu:target .gambarkomik img{
-	margin-left: 0;
-}
+
 .tutuppintu:target .isisamping{
 	z-index: 1000;
 	position: fixed;
@@ -302,7 +318,7 @@ body{
 	left: 0;
 	 justify-content: center;
   	align-items: center;
-}*/
+}
 /*opsi dua*/
 /*.gambarkomik{
 	z-index: -1;
@@ -398,6 +414,7 @@ body{
 	left: 0;
  	justify-content: center;
   	align-items: center;
+
 }
 .pembelakang:target .isisamping{
 	background-color: rgba(0, 0, 0, 0.1);
